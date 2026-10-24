@@ -12,8 +12,7 @@ while True:
         print("Uwaga: temperatura przekroczyła 28 stopni Celsjusza")
 
     try:
-        odpowiedz = requests.post(
-            "https://api.thingspeak.com/update",
+        odpowiedz = requests.post("https://api.thingspeak.com/update",
             data={"api_key": API_KEY, "field1": temperatura},
             timeout=10
         )

@@ -18,7 +18,7 @@ def po_wiadomosci(client, userdata, message):
     swiatlo = dane["swiatlo"]
     obecnosc = dane["obecnosc"]
 
-    if swiatlo < 30:
+    if swiatlo < 30 and obecnosc == 1:
         lampa = 1
     else:
         lampa = 0

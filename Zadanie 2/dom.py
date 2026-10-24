@@ -31,7 +31,7 @@ client.on_message = po_wiadomosci
 client.connect("test.mosquitto.org", 1883)
 client.loop_start()
 
-obecnosc = int(input("Jesteś w domu? Wpisz 1 = tak lub 0 = nie: "))
+obecnosc = int(input("Jesteś w domu? (1 = tak lub 0 = nie) "))
 
 while True:
     dane = {
